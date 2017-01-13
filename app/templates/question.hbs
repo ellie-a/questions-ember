@@ -6,8 +6,8 @@
 
   <h4>Answers</h4>
   <ul>
-    {{#each model.answers as |answer|}}
-      {{model.author}}<br>{{model.answer}}
+    {{#each question.answers as |answer|}}
+      {{answer-tile saveAnswer="saveAnswer" question=question}}
     {{/each}}
   </ul>
 </div>
