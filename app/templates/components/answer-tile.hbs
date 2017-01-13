@@ -1,0 +1,21 @@
+{{#if addNewAnswer}}
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          {{input value=user id="answer-auth" class="validate"}}
+          <label for="user">Your Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{input value=answer id="answer" class="validate"}}
+          <label for="answer">Your Answer</label>
+        </div>
+      </div>
+    </form>
+    <button {{action 'saveAnswer'}} class="btn">Post</button>
+  </div>
+{{else}}
+  <button {{action 'answerFormShow'}} class="btn">New Answer</button>
+{{/if}}

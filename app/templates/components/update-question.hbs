@@ -1,0 +1,25 @@
+{{#if updateQuestionForm}}
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          {{input value=ask id="ask" class="validate"}}
+          <label for="ask">Question</label>
+        </div>
+        <div class="input-field col s6">
+          {{input value=author id="author" class="validate"}}
+          <label for="author">Your Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          {{input value=notes id="notes" class="validate"}}
+          <label for="notes">Notes about your Question</label>
+        </div>
+      </div>
+    </form>
+    <button {{action 'updateQuestion' model}} class="btn">Save</button>
+  </div>
+{{else}}
+  <button class="btn" {{action 'updateQuestionForm'}}>Update</button>
+{{/if}}

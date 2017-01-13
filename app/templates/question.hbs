@@ -1,2 +1,17 @@
-<h2>More information about {{model.author}}'s {{model.ask}}</h2>
+{{navbar-fixed}}
+<div class="container">
   {{question-detail question=model}}
+  {{update-question update="update" question=model }}
+  {{answer-tile saveAnswer="saveAnswer" question=model}}
+
+  <h4>Answers</h4>
+  <ul>
+    {{#each model.answers as |answer|}}
+      {{model.author}}<br>{{model.answer}}
+    {{/each}}
+  </ul>
+</div>
+
+  <!-- {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}} -->
