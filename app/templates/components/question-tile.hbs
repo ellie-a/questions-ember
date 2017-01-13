@@ -6,7 +6,7 @@
         <p>{{question.author}}</p>
       </div>
       <div class="card-action">
-        <a href="#">Have an answer?</a>
+        {{#link-to 'question' question_id}}Have an answer?{{/link-to}}
       </div>
     </div>
   </div>
