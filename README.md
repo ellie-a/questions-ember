@@ -1,7 +1,6 @@
-# question-forum
+# Question-forum
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A web app using Ember to allow users to view questions on the index page, click on a link referencing the question. The link takes the user to the question id, user is able to view full content, update wuestion, and submit and answer as well as view previous answers.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/ellie-a/questions-ember` this repository
 * `cd question-forum`
 * `npm install`
 * `bower install`
@@ -52,7 +51,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 ### Known Bugs
-  * So many bugs, would love to chat about them
+  * No known bugs
 
 ### License
 

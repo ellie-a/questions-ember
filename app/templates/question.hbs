@@ -1,15 +1,19 @@
 {{navbar-fixed}}
 <div class="container">
   {{question-detail question=model}}
-  {{update-question update="update" question=model }}
+  {{update-question updateQuestion="updateQuestion" question=model }}
   {{answer-tile saveAnswer="saveAnswer" question=model}}
 
-  <h4>Answers</h4>
-  <ul>
-    {{#each question.answers as |answer|}}
+
+  <!-- <ul>
+    {{#each model.answers as |answer|}}
       {{answer-tile saveAnswer="saveAnswer" question=question}}
+      Username: {{answer.user}}
+       <br>
+       Answer: {{answer.answer}}
+       <br><br><br>
     {{/each}}
-  </ul>
+  </ul> -->
 </div>
 
   <!-- {{#each model.answers as |answer|}}
